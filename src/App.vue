@@ -1,14 +1,10 @@
 <script setup lang="ts">
-import HeaderBar from './components/HeaderBar.vue'
-import FooterBar from './components/FooterBar.vue'
+import SiteLayout from './layouts/SiteLayout.vue'
 </script>
 
 <template>
-  <div class="min-h-screen bg-white dark:bg-neutral-950 text-neutral-900 dark:text-white">
-    <HeaderBar />
+  <SiteLayout>
     <router-view />
-    <FooterBar />
-  </div>
-  
+  </SiteLayout>
 </template>
 
