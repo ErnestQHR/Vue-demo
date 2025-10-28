@@ -1,9 +1,14 @@
 <template>
   <header class="sticky top-0 z-40 bg-neutral-950/70 backdrop-blur">
     <div class="px-4 py-3 flex items-center gap-4">
-      <router-link to="/" class="flex items-center gap-2 font-semibold text-neutral-900 dark:text-white">
-        <span class="inline-flex h-7 w-7 items-center justify-center rounded-md bg-gradient-to-br from-neutral-900 to-neutral-700 dark:from-white dark:to-neutral-300 text-xs text-white dark:text-neutral-900">H</span>
-        <span class="tracking-tight">皓然站 · AI导航</span>
+      <button @click="$emit('toggleDrawer')" class="lg:hidden text-neutral-300 hover:text-white">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+      <router-link to="/" class="flex items-center gap-2 font-semibold text-white">
+        <span class="inline-flex h-7 w-7 items-center justify-center rounded-md bg-gradient-to-br from-white to-neutral-300 text-xs text-neutral-900">H</span>
+        <span class="tracking-tight hidden sm:inline">皓然站 · AI导航</span>
       </router-link>
 
       <div class="hidden md:flex items-center gap-3 ml-6 text-neutral-300">
@@ -26,6 +31,8 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
+
+defineEmits<{ (e: 'toggleDrawer'): void }>()
 
 const router = useRouter()
 const keyword = ref('')

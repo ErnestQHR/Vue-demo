@@ -1,20 +1,22 @@
 [
   {"id":1,"title":"扣子空间","cover":"https://picsum.photos/seed/ko/640/360","badges":["编辑推荐","完全免费","大厂出品"],"summary":"字节跳动推出的AI智能体开发与协作平台","categories":["agent"],"createdAt":"2025-10-01","link":"https://www.coze.cn/"},
   {"id":2,"title":"绘蛙AI","cover":"https://picsum.photos/seed/huiwa/640/360","badges":["编辑推荐","AI商拍"],"summary":"阿里电商营销AI工具","categories":["design"],"createdAt":"2025-10-02","link":"https://huwa.ai/"},
-  {"id":3,"title":"办公小浣熊","cover":"https://picsum.photos/seed/xx/640/360","badges":["AI数据分析"],"summary":"商汤AI数据分析和报告撰写","categories":["office"],"createdAt":"2025-10-03"},
+  {"id":3,"title":"办公小浣熊","cover":"https://picsum.photos/seed/xx/640/360","badges":["AI数据分析"],"summary":"商汤AI数据分析和报告撰写","categories":["office"],"createdAt":"2025-10-03","link":"https://office.sensetime.com/"},
   {"id":4,"title":"讯飞星火","cover":"https://picsum.photos/seed/spark/640/360","badges":["AI聊天助手"],"summary":"深度推理能力升级","categories":["chat"],"createdAt":"2025-10-04","link":"https://xinghuo.xfyun.cn/"},
-  {"id":5,"title":"Flowith","cover":"https://picsum.photos/seed/flow/640/360","badges":["新兴初创","Agent模式"],"summary":"画布式AI聊天助手和智能体","categories":["agent","chat"],"createdAt":"2025-10-05"},
-  {"id":6,"title":"堆友AI","cover":"https://picsum.photos/seed/duiyou/640/360","badges":["大厂出品"],"summary":"阿里免费AI绘画生成器","categories":["design"],"createdAt":"2025-10-06"},
-  {"id":7,"title":"豆包AI编程","cover":"https://picsum.photos/seed/doubao/640/360","badges":["编辑推荐","完全免费"],"summary":"字节对话式AI编程工具","categories":["code"],"createdAt":"2025-10-07"},
-  {"id":8,"title":"蛙蛙写作","cover":"https://picsum.photos/seed/wawa/640/360","badges":["AI写作"],"summary":"AI小说和剧本创作","categories":["write"],"createdAt":"2025-10-08"},
+  {"id":5,"title":"Flowith","cover":"https://picsum.photos/seed/flow/640/360","badges":["新兴初创","Agent模式"],"summary":"画布式AI聊天助手和智能体","categories":["agent","chat"],"createdAt":"2025-10-05","link":"https://flowith.io/"},
+  {"id":6,"title":"堆友AI","cover":"https://picsum.photos/seed/duiyou/640/360","badges":["大厂出品"],"summary":"阿里免费AI绘画生成器","categories":["design"],"createdAt":"2025-10-06","link":"https://d.design/"},
+  {"id":7,"title":"豆包AI编程","cover":"https://picsum.photos/seed/doubao/640/360","badges":["编辑推荐","完全免费"],"summary":"字节对话式AI编程工具","categories":["code"],"createdAt":"2025-10-07","link":"https://www.doubao.com/"},
+  {"id":8,"title":"蛙蛙写作","cover":"https://picsum.photos/seed/wawa/640/360","badges":["AI写作"],"summary":"AI小说和剧本创作","categories":["write"],"createdAt":"2025-10-08","link":"https://www.wawawriter.com/"},
   {"id":9,"title":"HeyGen","cover":"https://picsum.photos/seed/hey/640/360","badges":["AI数字人"],"summary":"无需出镜的数字人视频","categories":["video"],"createdAt":"2025-10-09","link":"https://www.heygen.com/"},
-  {"id":10,"title":"ChatGPT Atlas","cover":"https://picsum.photos/seed/atlas/640/360","badges":["AI浏览器"],"summary":"OpenAI推出的AI网络浏览器","categories":["browser"],"createdAt":"2025-10-10"},
-  {"id":11,"title":"Supernormal","cover":"https://picsum.photos/seed/super/640/360","badges":["AI记录摘要"],"summary":"自动记录、总结会议内容","categories":["record"],"createdAt":"2025-10-11"},
-  {"id":12,"title":"Heptabase","cover":"https://picsum.photos/seed/hepta/640/360","badges":["AI记录摘要"],"summary":"可视化的个人知识管理","categories":["record"],"createdAt":"2025-10-12"},
-  {"id":13,"title":"HeroUI Chat","cover":"https://picsum.photos/seed/heroui/640/360","badges":["AI网站制作"],"summary":"文本或截图转为应用","categories":["site"],"createdAt":"2025-10-13"},
-  {"id":14,"title":"a0.dev","cover":"https://picsum.photos/seed/a0/640/360","badges":["AI网站制作"],"summary":"提示转可发布移动应用","categories":["site"],"createdAt":"2025-10-14"},
-  {"id":15,"title":"Hex","cover":"https://picsum.photos/seed/hex/640/360","badges":["AI数据分析"],"summary":"协作式AI数据分析","categories":["data"],"createdAt":"2025-10-15"},
-  {"id":16,"title":"Orchids","cover":"https://picsum.photos/seed/orchids/640/360","badges":["AI网站制作"],"summary":"自然语言驱动全栈工程师","categories":["site"],"createdAt":"2025-10-16"}
+  {"id":10,"title":"ChatGPT Atlas","cover":"https://picsum.photos/seed/atlas/640/360","badges":["AI浏览器"],"summary":"OpenAI推出的AI网络浏览器","categories":["browser"],"createdAt":"2025-10-10","link":"https://chatgpt.com/"},
+  {"id":11,"title":"Supernormal","cover":"https://picsum.photos/seed/super/640/360","badges":["AI记录摘要"],"summary":"自动记录、总结会议内容","categories":["record"],"createdAt":"2025-10-11","link":"https://supernormal.com/"},
+  {"id":12,"title":"Heptabase","cover":"https://picsum.photos/seed/hepta/640/360","badges":["AI记录摘要"],"summary":"可视化的个人知识管理","categories":["record"],"createdAt":"2025-10-12","link":"https://heptabase.com/"},
+  {"id":13,"title":"HeroUI Chat","cover":"https://picsum.photos/seed/heroui/640/360","badges":["AI网站制作"],"summary":"文本或截图转为应用","categories":["site"],"createdAt":"2025-10-13","link":"https://heroui.chat/"},
+  {"id":14,"title":"a0.dev","cover":"https://picsum.photos/seed/a0/640/360","badges":["AI网站制作"],"summary":"提示转可发布移动应用","categories":["site"],"createdAt":"2025-10-14","link":"https://a0.dev/"},
+  {"id":15,"title":"Hex","cover":"https://picsum.photos/seed/hex/640/360","badges":["AI数据分析"],"summary":"协作式AI数据分析","categories":["data"],"createdAt":"2025-10-15","link":"https://hex.tech/"},
+  {"id":16,"title":"Orchids","cover":"https://picsum.photos/seed/orchids/640/360","badges":["AI网站制作"],"summary":"自然语言驱动全栈工程师","categories":["site"],"createdAt":"2025-10-16","link":"https://orchids.dev/"},
+  {"id":17,"title":"Gamma","cover":"https://picsum.photos/seed/gamma/640/360","badges":["AI PPT制作"],"summary":"AI驱动的演示文稿生成器","categories":["ppt"],"createdAt":"2025-10-17","link":"https://gamma.app/"},
+  {"id":18,"title":"Perplexity","cover":"https://picsum.photos/seed/pplx/640/360","badges":["AI搜索引擎"],"summary":"AI对话式搜索引擎","categories":["search"],"createdAt":"2025-10-18","link":"https://www.perplexity.ai/"},
+  {"id":19,"title":"Midjourney","cover":"https://picsum.photos/seed/mj/640/360","badges":["AI图像/设计","编辑推荐"],"summary":"高质量AI艺术图像生成","categories":["design"],"createdAt":"2025-10-19","link":"https://www.midjourney.com/"},
+  {"id":20,"title":"Claude","cover":"https://picsum.photos/seed/claude/640/360","badges":["AI聊天助手","大厂出品"],"summary":"Anthropic推出的对话助手","categories":["chat"],"createdAt":"2025-10-20","link":"https://claude.ai/"}
 ]
-
-
