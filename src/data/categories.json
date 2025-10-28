@@ -1,0 +1,17 @@
+[
+  {"slug":"agent","name":"AI智能体"},
+  {"slug":"chat","name":"AI聊天助手"},
+  {"slug":"design","name":"AI图像/设计"},
+  {"slug":"video","name":"AI视频/动画"},
+  {"slug":"music","name":"AI音频/音乐"},
+  {"slug":"code","name":"AI代码编程"},
+  {"slug":"data","name":"AI数据分析"},
+  {"slug":"browser","name":"AI浏览器"},
+  {"slug":"site","name":"AI网站制作"},
+  {"slug":"record","name":"AI记录摘要"},
+  {"slug":"write","name":"AI写作"},
+  {"slug":"office","name":"AI文档办公"},
+  {"slug":"all","name":"全部"}
+]
+
+
