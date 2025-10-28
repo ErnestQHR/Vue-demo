@@ -14,8 +14,8 @@
 
       <div class="ml-auto flex-1 max-w-xl">
         <div class="relative">
-          <input v-model="keyword" type="search" placeholder="搜索AI工具…" class="w-full rounded-md border border-neutral-700 bg-neutral-900 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-neutral-700 text-neutral-200" />
-          <button class="absolute right-1 top-1/2 -translate-y-1/2 px-3 py-1 text-sm text-neutral-300 hover:text-white" @click="$emit('search', keyword)">搜索</button>
+          <input v-model="keyword" @keyup.enter="doSearch" type="search" placeholder="搜索AI工具…" class="w-full rounded-md border border-neutral-700 bg-neutral-900 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-neutral-700 text-neutral-200" />
+          <button class="absolute right-1 top-1/2 -translate-y-1/2 px-3 py-1 text-sm text-neutral-300 hover:text-white" @click="doSearch">搜索</button>
         </div>
       </div>
     </div>
@@ -25,15 +25,19 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 
-defineEmits<{ (e: 'search', q: string): void }>()
-
+const router = useRouter()
 const keyword = ref('')
 const quickCategories = [
   { slug: 'agent', name: 'AI智能体' },
   { slug: 'chat', name: 'AI聊天助手' },
   { slug: 'design', name: 'AI图像/设计' },
 ]
+
+function doSearch() {
+  router.push({ name: 'Category', params: { slug: 'all' }, query: { q: keyword.value } })
+}
 </script>
 
 

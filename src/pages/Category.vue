@@ -46,6 +46,16 @@ const filtered = computed(() => {
 
 const pages = computed(() => Math.max(1, Math.ceil(filtered.value.length / pageSize)))
 const paged = computed(() => filtered.value.slice((page.value-1)*pageSize, page.value*pageSize))
+
+// Initialize from query param
+import { onMounted, watch } from 'vue'
+onMounted(() => {
+  const qParam = String(route.query.q || '')
+  if (qParam) q.value = qParam
+})
+watch(() => route.query.q, (val) => {
+  q.value = String(val || '')
+})
 </script>
 
 
