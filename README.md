@@ -129,15 +129,15 @@ npm run preview
 本项目使用 GitHub Actions 自动部署到 GitHub Pages。
 
 1. **推送代码**到 `main` 分支后，Actions 自动触发构建。
-2. **构建产物**（`dist/`）会被上传到 `gh-pages` 分支（或作为 artifact）。
+2. **构建产物**（`dist/`）会被上传并部署到 GitHub Pages。
 3. **访问地址**：https://ernestqhr.github.io/Vue-demo/
 
-### 已知问题与修复
+### 配置要求
 
-如果 Actions 失败，常见原因：
-- **权限不足**：仓库 `Settings > Actions > General > Workflow permissions` 需设置为 "Read and write permissions"。
-- **Pages 未启用**：`Settings > Pages > Source` 需选择 "GitHub Actions"（或指定分支如 `gh-pages`）。
-- **base 路径不匹配**：确保 `vite.config.ts` 中 `base: '/Vue-demo/'` 与仓库名一致。
+部署成功需确保：
+- **权限配置**：仓库 `Settings > Actions > General > Workflow permissions` 设置为 "Read and write permissions" ✅
+- **Pages 启用**：`Settings > Pages > Source` 选择 "GitHub Actions"
+- **base 路径**：`vite.config.ts` 中 `base: '/Vue-demo/'` 与仓库名一致
 
 ---
 
