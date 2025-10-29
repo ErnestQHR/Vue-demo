@@ -1,22 +1,23 @@
 <template>
-  <div class="mx-auto max-w-7xl px-4 py-8">
+  <div class="mx-auto max-w-7xl px-3 sm:px-4 py-6 sm:py-8">
     <SectionTitle :title="categoryTitle" />
 
-    <div class="mb-4 flex flex-wrap items-center gap-2">
-      <input v-model="q" type="search" placeholder="筛选关键词…" class="w-full md:w-72 rounded-md border border-neutral-200 dark:border-neutral-700 bg-white/70 dark:bg-neutral-800/70 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-neutral-300 dark:focus:ring-neutral-700" />
-      <select v-model="sort" class="rounded-md border border-neutral-200 dark:border-neutral-700 bg-white/70 dark:bg-neutral-800/70 px-3 py-2 text-sm">
+    <div class="mb-4 flex flex-col sm:flex-row sm:items-center gap-2">
+      <input v-model="q" type="search" placeholder="筛选关键词…" class="w-full sm:flex-1 sm:max-w-xs rounded-md border border-neutral-700 bg-neutral-900 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-neutral-700 text-neutral-200" />
+      <select v-model="sort" class="rounded-md border border-neutral-700 bg-neutral-900 px-3 py-2 text-sm text-neutral-200">
         <option value="newest">最新</option>
         <option value="title">标题</option>
       </select>
     </div>
 
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
       <ToolCard v-for="t in paged" :key="t.id" :tool="t" />
     </div>
 
-    <div class="mt-6 flex justify-center gap-2">
-      <button :disabled="page===1" @click="page--" class="px-3 py-1.5 rounded border disabled:opacity-50">上一页</button>
-      <button :disabled="page===pages" @click="page++" class="px-3 py-1.5 rounded border disabled:opacity-50">下一页</button>
+    <div class="mt-6 flex justify-center gap-3">
+      <button :disabled="page===1" @click="page--" class="px-4 py-2 rounded-md border border-neutral-700 text-neutral-300 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-neutral-900">上一页</button>
+      <span class="px-3 py-2 text-neutral-400 text-sm">{{ page }} / {{ pages }}</span>
+      <button :disabled="page===pages" @click="page++" class="px-4 py-2 rounded-md border border-neutral-700 text-neutral-300 disabled:opacity-50 disabled:cursor-not-allowed hover:bg-neutral-900">下一页</button>
     </div>
   </div>
 </template>
