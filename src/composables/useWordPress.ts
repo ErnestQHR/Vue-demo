@@ -1,4 +1,4 @@
-import { ref, computed } from 'vue'
+import { ref } from 'vue'
 import { toolsApi, categoriesApi } from '@/services/api'
 import toolsJson from '@/data/tools.json'
 import categoriesJson from '@/data/categories.json'
@@ -50,11 +50,12 @@ export function useTools() {
     try {
       if (useWordPress.value) {
         // 从 WordPress 获取
-        const wpTools: WPTool[] = await toolsApi.getAll({
+        const response = await toolsApi.getAll({
           per_page: 100,
           search: params?.search,
           categories: params?.category,
         })
+        const wpTools: WPTool[] = response as any
         tools.value = wpTools.map(mapWPToolToTool)
       } else {
         // 降级到静态 JSON
@@ -62,7 +63,7 @@ export function useTools() {
         
         // 客户端过滤
         if (params?.category) {
-          tools.value = tools.value.filter(t => t.categories?.includes(params.category))
+          tools.value = tools.value.filter(t => t.categories?.includes(params.category || ''))
         }
         if (params?.search) {
           const q = params.search.toLowerCase()
@@ -98,7 +99,8 @@ export function useTool(id: string | number) {
 
     try {
       if (useWordPress.value) {
-        const wpTool: WPTool = await toolsApi.getById(id)
+        const response = await toolsApi.getById(id)
+        const wpTool: WPTool = response as any
         tool.value = mapWPToolToTool(wpTool)
       } else {
         const staticTool = (toolsJson as Tool[]).find(t => t.id === Number(id))
@@ -130,7 +132,8 @@ export function useCategories() {
 
     try {
       if (useWordPress.value) {
-        const wpCategories = await categoriesApi.getAll()
+        const response = await categoriesApi.getAll()
+        const wpCategories = response as any
         categories.value = wpCategories.map((c: any) => ({
           slug: c.slug,
           name: c.name,

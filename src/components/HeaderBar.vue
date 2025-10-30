@@ -44,10 +44,9 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch } from 'vue'
+import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { useTheme } from '@/composables/useTheme'
-import { debounce } from '@/composables/useDebounce'
 
 defineEmits<{ (e: 'toggleDrawer'): void }>()
 
@@ -65,18 +64,6 @@ function doSearch() {
   if (!keyword.value.trim()) return
   router.push({ name: 'Category', params: { slug: 'all' }, query: { q: keyword.value } })
 }
-
-// 搜索防抖（300ms）
-const debouncedSearch = debounce(() => {
-  doSearch()
-}, 300)
-
-// 监听输入变化，自动触发搜索（可选）
-// watch(keyword, () => {
-//   if (keyword.value.length > 2) {
-//     debouncedSearch()
-//   }
-// })
 </script>
 
 

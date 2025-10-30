@@ -48,7 +48,7 @@ export const router = createRouter({
 })
 
 // 全局路由守卫：更新页面标题
-router.beforeEach((to, from, next) => {
+router.beforeEach((to, _from, next) => {
   const title = (to.meta.title as string) || '皓然站 · AI 导航'
   document.title = title
   next()
